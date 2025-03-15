@@ -28,7 +28,7 @@ export function Hero() {
           </Button>
           <Button
             component={Link}
-            href="https://github.com/evroon"
+            href="https://www.linkedin.com/in/evroon"
             size="xl"
             variant="outline"
             className={classes.control}
