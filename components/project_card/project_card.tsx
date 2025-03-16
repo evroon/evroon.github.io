@@ -1,12 +1,4 @@
-import {
-  Avatar,
-  Badge,
-  Button,
-  Card,
-  Center,
-  Group,
-  Text,
-} from "@mantine/core";
+import { Avatar, Badge, Button, Card, Flex, Group, Text } from "@mantine/core";
 import classes from "./project_card.module.css";
 import { IconBrandGithub } from "@tabler/icons-react";
 import ProjectCardSection from "@/components/project_card/project_card_section";
@@ -65,15 +57,24 @@ export default function ProjectCard({
         {description}
       </Text>
 
-      <Group justify="space-between" mt="1rem">
-        <Center>
+      <Flex gap="md" mt="1rem" className={classes.a}>
+        <Group gap={0}>
           <Avatar src={icon.src} size={24} radius="xl" mr="xs" />
           <Text fz="sm" inline>
             Erik Vroon
           </Text>
-        </Center>
+        </Group>
 
-        <Group gap={8} mr={0}>
+        <Flex gap="md" mr={0} wrap="wrap" className={classes.button_group}>
+          <Button
+            variant="outline"
+            color="teal"
+            leftSection={<IconBrandGithub size={24} />}
+            component={Link}
+            href={github_url}
+          >
+            GitHub
+          </Button>
           {!website_url || (
             <Button
               variant="outline"
@@ -85,17 +86,8 @@ export default function ProjectCard({
               Website
             </Button>
           )}
-          <Button
-            variant="outline"
-            color="teal"
-            leftSection={<IconBrandGithub size={24} />}
-            component={Link}
-            href={github_url}
-          >
-            GitHub
-          </Button>
-        </Group>
-      </Group>
+        </Flex>
+      </Flex>
     </Card>
   );
 }

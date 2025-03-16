@@ -36,3 +36,22 @@
 .footer {
   margin-top: var(--mantine-spacing-md);
 }
+
+.a {
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    flex-direction: column;
+  }
+}
+
+.button_group {
+  justify-content: flex-end;
+  flex-direction: row;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    justify-content: start;
+    margin-right: var(--mantine-spacing-md);
+  }
+}
