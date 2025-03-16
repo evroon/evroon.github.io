@@ -13,7 +13,7 @@ export default function ProjectCardSection({
   return (
     <Card.Section>
       <Link href={url}>
-        <Image src={image} alt="Project logo" height={580} />
+        <Image src={image} alt="Project logo" height="50%" />
       </Link>
     </Card.Section>
   );
