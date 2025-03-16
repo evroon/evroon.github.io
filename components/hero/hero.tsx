@@ -1,4 +1,4 @@
-import { Button, Container, Group, Text } from "@mantine/core";
+import { Button, Container, Flex, Text } from "@mantine/core";
 import classes from "./hero.module.css";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import Link from "next/link";
@@ -15,9 +15,10 @@ export function Hero() {
           capabilities for 3D graphics.
         </Text>
 
-        <Group className={classes.controls}>
+        <Flex gap="md" wrap="wrap" className={classes.controls}>
           <Button
             component={Link}
+            miw="12rem"
             href="https://github.com/evroon"
             size="xl"
             variant="default"
@@ -28,6 +29,7 @@ export function Hero() {
           </Button>
           <Button
             component={Link}
+            miw="12rem"
             href="https://www.linkedin.com/in/evroon"
             size="xl"
             variant="outline"
@@ -36,7 +38,7 @@ export function Hero() {
           >
             LinkedIn
           </Button>
-        </Group>
+        </Flex>
       </Container>
     </div>
   );
