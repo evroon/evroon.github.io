@@ -35,7 +35,7 @@ export default function Projects() {
         title="Bevy experiments"
         description="Experiments in Bevy, including a boids simulation in a compute shader."
         image={bevy_experiments_logo.src}
-        github_url="https://github.com/evroon/hold-my-place"
+        github_url="https://github.com/evroon/bevy-experiments"
         languages={["rust"]}
       />
     </Container>
