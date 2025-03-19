@@ -3,6 +3,7 @@ import { Container } from "@mantine/core";
 import bracket_logo from "../assets/bracket-logo.png";
 import holdmyplace_logo from "../assets/hold-my-place-logo.svg";
 import bevy_hydrology_logo from "../assets/bevy-hydrology-logo.png";
+import bevy_experiments_logo from "../assets/bevy-experiments-logo.png";
 
 export default function Projects() {
   return (
@@ -28,6 +29,13 @@ export default function Projects() {
         image={holdmyplace_logo.src}
         github_url="https://github.com/evroon/hold-my-place"
         website_url="https://holdmyplace.online"
+        languages={["rust"]}
+      />
+      <ProjectCard
+        title="Bevy experiments"
+        description="Experiments in Bevy, including a boids simulation in a compute shader."
+        image={bevy_experiments_logo.src}
+        github_url="https://github.com/evroon/hold-my-place"
         languages={["rust"]}
       />
     </Container>
