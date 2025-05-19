@@ -32,7 +32,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
-    "markdownlint-cli2": "^0.18.0",
+    "markdownlint-cli2": "^0.18.1",
     "markdownlint-rule-relative-links": "^4.1.0",
     "postcss": "^8.5.3",
     "postcss-preset-mantine": "^1.17.0",
