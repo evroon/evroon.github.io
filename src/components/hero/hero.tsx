@@ -1,7 +1,7 @@
 import { Button, Container, Flex, Text } from "@mantine/core";
 import classes from "./hero.module.css";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
-import Link from "next/link";
+import PreloadLink from "../link";
 
 export function Hero() {
   return (
@@ -17,7 +17,7 @@ export function Hero() {
 
         <Flex gap="md" wrap="wrap" className={classes.controls}>
           <Button
-            component={Link}
+            component={PreloadLink}
             miw="12rem"
             href="https://github.com/evroon"
             size="xl"
@@ -28,7 +28,7 @@ export function Hero() {
             GitHub
           </Button>
           <Button
-            component={Link}
+            component={PreloadLink}
             miw="12rem"
             href="https://www.linkedin.com/in/evroon"
             size="xl"

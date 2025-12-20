@@ -1,10 +1,9 @@
 import { Avatar, Badge, Button, Card, Flex, Group, Text } from "@mantine/core";
 import classes from "./project_card.module.css";
 import { IconBrandGithub } from "@tabler/icons-react";
-import ProjectCardSection from "@/components/project_card/project_card_section";
-import icon from "../../assets/icon.png";
 import { CiGlobe } from "react-icons/ci";
-import Link from "next/link";
+import PreloadLink from "../link";
+import ProjectCardSection from "./project_card_section";
 
 type language = "rust" | "python" | "typescript";
 
@@ -59,7 +58,7 @@ export default function ProjectCard({
 
       <Flex gap="md" mt="1rem" className={classes.a}>
         <Group gap={0}>
-          <Avatar src={icon.src} size={24} radius="xl" mr="xs" />
+          <Avatar src={"/assets/icon.png"} size={24} radius="xl" mr="xs" />
           <Text fz="sm" inline>
             Erik Vroon
           </Text>
@@ -70,7 +69,7 @@ export default function ProjectCard({
             variant="outline"
             color="teal"
             leftSection={<IconBrandGithub size={24} />}
-            component={Link}
+            component={PreloadLink}
             href={github_url}
           >
             GitHub
@@ -80,7 +79,7 @@ export default function ProjectCard({
               variant="outline"
               color="teal"
               leftSection={<CiGlobe size={24} />}
-              component={Link}
+              component={PreloadLink}
               href={website_url}
             >
               Website

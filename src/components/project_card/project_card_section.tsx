@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, Image } from "@mantine/core";
-import Link from "next/link";
+import PreloadLink from "../link";
 
 export default function ProjectCardSection({
   image,
@@ -12,9 +12,9 @@ export default function ProjectCardSection({
 }) {
   return (
     <Card.Section>
-      <Link href={url}>
+      <PreloadLink href={url}>
         <Image src={image} alt="Project logo" height="50%" />
-      </Link>
+      </PreloadLink>
     </Card.Section>
   );
 }
