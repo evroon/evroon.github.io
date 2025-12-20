@@ -13,6 +13,13 @@ export default function Projects() {
         languages={["typescript", "python"]}
       />
       <ProjectCard
+        title="Bevy Volumetric Clouds"
+        description="Volumetric clouds rendering in Bevy based on Horizon Zero Dawn."
+        image={"/assets/bevy-volumetric-clouds.png"}
+        github_url="https://github.com/evroon/bevy-volumetric-clouds"
+        languages={["rust"]}
+      />
+      <ProjectCard
         title="Bevy Hydrology"
         description="Hydrology simulation in Bevy on the GPU. It simulates particles falling on the terrain, which descend down the slope. The particles affect the terrain by erosion and sedimentation."
         image={"/assets/bevy-hydrology-logo.png"}
