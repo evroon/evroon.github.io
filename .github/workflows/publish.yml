@@ -32,6 +32,9 @@ jobs:
       - name: Run prettier, lint, jest checks
         run: pnpm test
 
+      - name: Build
+        run: pnpm build
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.7.1
         with:
