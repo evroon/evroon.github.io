@@ -1,6 +1,6 @@
 import { Button, Container, Group, Text, Title } from "@mantine/core";
 import classes from "./404.module.css";
-import Link from "next/link";
+import PreloadLink from "../link";
 
 function Illustration(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
@@ -30,7 +30,7 @@ export function NotFoundError() {
             the address, or the page has been moved to another URL.
           </Text>
           <Group justify="center">
-            <Button size="md" component={Link} href="/">
+            <Button size="md" component={PreloadLink} href="/">
               Take me back to home page
             </Button>
           </Group>

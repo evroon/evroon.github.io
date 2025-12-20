@@ -1,4 +1,7 @@
-name: docs
+name: publish
+
+permissions:
+  contents: write
 
 on:
   workflow_dispatch:
@@ -6,30 +9,28 @@ on:
     branches:
       - 'master'
 
-permissions:
-  contents: write
-
 jobs:
   build:
     runs-on: ubuntu-24.04
 
     steps:
       - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
 
-      - name: Setup yarn
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Setup pnpm
         uses: actions/setup-node@v6
         with:
-          node-version: '22'
-          cache: 'yarn'
-          cache-dependency-path: yarn.lock
+          node-version: '24'
+          cache: 'pnpm'
+          cache-dependency-path: frontend/pnpm-lock.yaml
 
       - name: Install npm modules
-        run: yarn
+        run: pnpm i
 
-      - name: Build docs
-        run: yarn build
+      - name: Run prettier, lint, jest checks
+        run: pnpm test
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.7.1

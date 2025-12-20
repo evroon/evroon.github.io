@@ -1,35 +1,18 @@
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
-import { ActionIcon, Group } from "@mantine/core";
+import { ActionIcon, Group, Image } from "@mantine/core";
 import classes from "./footer.module.css";
-import Image from "next/image";
-import favicon from "../../assets/icon.png";
-import Link from "next/link";
-
-// const links = [{ link: "https://github.com/evroon/bracket", label: "Bracket" }];
+import PreloadLink from "../link";
 
 export function Footer() {
-  // const items = links.map((link) => (
-  //   <Anchor
-  //     c="dimmed"
-  //     key={link.label}
-  //     href={link.link}
-  //     lh={1}
-  //     size="sm"
-  //     component={Link}
-  //   >
-  //     {link.label}
-  //   </Anchor>
-  // ));
-
   return (
     <div className={classes.footer}>
       <div className={classes.inner}>
         <Image
-          src={favicon.src}
+          src={"/assets/icon.png"}
           alt=""
           width={42}
           height={42}
-          style={{ borderRadius: "25%" }}
+          style={{ borderRadius: "25%", width: '42px' }}
         />
 
         {/*<Group className={classes.links}>{items}</Group>*/}
@@ -42,7 +25,7 @@ export function Footer() {
             size="lg"
             variant="default"
             radius="xl"
-            component={Link}
+            component={PreloadLink}
             href="https://github.com/evroon"
           >
             <IconBrandGithub size={18} stroke={1.5} />
@@ -51,7 +34,7 @@ export function Footer() {
             size="lg"
             variant="default"
             radius="xl"
-            component={Link}
+            component={PreloadLink}
             href="https://www.linkedin.com/in/evroon"
           >
             <IconBrandLinkedin size={18} stroke={1.5} />
