@@ -12,7 +12,7 @@ export function Footer() {
           alt=""
           width={42}
           height={42}
-          style={{ borderRadius: "25%", width: '42px' }}
+          style={{ borderRadius: "25%", width: "42px" }}
         />
 
         {/*<Group className={classes.links}>{items}</Group>*/}
