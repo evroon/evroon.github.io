@@ -1,6 +1,9 @@
 # evroon.github.io
 
-Github Pages website served at <https://evroon.github.io/>.
+Cloudflare Pages website served at <https://www.erikvroon.nl/>.
+
+Note: normally a repository as this one is used to serve a Github Pages site at <https://evroon.github.io/>.
+This was the case previously but now it's served by Cloudflare at https://www.erikvroon.nl/.
 
 This is a [Vite](https://vite.dev) project.
 
