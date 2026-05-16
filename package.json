@@ -11,9 +11,10 @@
     "export": "vite build && vite export",
     "jest": "jest",
     "jest:watch": "jest --watch",
-    "prettier:check": "prettier --check \"**/*.{ts,tsx}\"",
-    "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
-    "test": "tsc --noEmit && pnpm run prettier:write"
+    "lint": "oxlint .",
+    "format:check": "oxfmt --check \"**/*.{ts,tsx}\"",
+    "format:write": "oxfmt \"**/*.{ts,tsx}\"",
+    "test": "pnpm run typecheck && pnpm run lint && pnpm run format:check"
   },
   "dependencies": {
     "@mantine/core": "8.3.10",
@@ -21,22 +22,20 @@
     "@tabler/icons-react": "3.41.0",
     "@vitejs/plugin-react": "6.0.1",
     "nuqs": "2.8.5",
+    "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-icons": "5.6.0",
-    "react-router": "7.14.0",
-    "react": "19.2.0"
+    "react-router": "7.14.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "3.3.3",
     "@types/node": "25.6.0",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
-    "eslint": "9.39.2",
-    "eslint-config-next": "16.2.1",
+    "oxfmt": "^0.50.0",
+    "oxlint": "^1.65.0",
     "postcss": "8.5.6",
     "postcss-preset-mantine": "1.18.0",
     "postcss-simple-vars": "7.0.1",
-    "prettier": "3.8.0",
     "typescript": "5.9.3",
     "vite": "^8.0.8",
     "vite-plugin-i18next-loader": "^3.1.3"

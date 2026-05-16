@@ -27,7 +27,7 @@ jobs:
       - name: Install npm modules
         run: pnpm i
 
-      - name: Run prettier, lint, jest checks
+      - name: Run typecheck, oxlint, and oxfmt checks
         run: pnpm test
 
       - name: Run build
