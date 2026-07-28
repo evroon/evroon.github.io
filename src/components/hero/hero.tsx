@@ -10,9 +10,8 @@ export function Hero() {
         <h1 className={classes.title}>Erik Vroon</h1>
 
         <Text className={classes.description} c="dimmed">
-          I am a software engineer with a physics and aerospace engineering
-          background. I enjoy building web applications and using GPU
-          capabilities for 3D graphics.
+          I am a software engineer with a physics and aerospace engineering background. I enjoy
+          building web applications and using GPU capabilities for 3D graphics.
         </Text>
 
         <Flex gap="md" wrap="wrap" className={classes.controls}>

@@ -42,12 +42,7 @@ export default function ProjectCard({
       <Group className={classes.rating}>{langauge_badges}</Group>
 
       <Group justify="space-between">
-        <Text
-          className={classes.title}
-          fw={500}
-          component="a"
-          href={website_url}
-        >
+        <Text className={classes.title} fw={500} component="a" href={website_url}>
           {title}
         </Text>
       </Group>
