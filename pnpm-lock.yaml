@@ -67,8 +67,8 @@ importers:
         specifier: ^8.1.3
         version: 8.1.3(@types/node@26.1.1)(esbuild@0.27.2)(sugarss@5.0.1(postcss@8.5.23))
       vite-plugin-i18next-loader:
-        specifier: ^4.0.1
-        version: 4.0.1(vite@8.1.3(@types/node@26.1.1)(esbuild@0.27.2)(sugarss@5.0.1(postcss@8.5.23)))
+        specifier: ^4.1.0
+        version: 4.1.0(vite@8.1.3(@types/node@26.1.1)(esbuild@0.27.2)(sugarss@5.0.1(postcss@8.5.23)))
 
 packages:
 
@@ -803,8 +803,8 @@ packages:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
 
-  ansi-regex@6.2.2:
-    resolution: {integrity: sha512-Bq3SmSpyFHaWjPk8If9yc6svM8c56dB5BAtW4Qbw5jHTwwXXcTLoRMkpDJp6VL0XzlWaCHTXrkFURMYmD0sLqg==}
+  ansi-regex@6.3.0:
+    resolution: {integrity: sha512-WpDfL7NO6j7tH88IDBNVdUJxDh9nmCteAVW9dsep846XdwF4naCBK+/tGLX3KJgcpgMRXCFlTM2hKGoK9FsdrQ==}
     engines: {node: '>=12'}
 
   ansi-styles@4.3.0:
@@ -821,8 +821,8 @@ packages:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
 
-  brace-expansion@5.0.8:
-    resolution: {integrity: sha512-JZyDyq3D4AUifKTPOB7DELf6XsB3WdPuNxCtob1vFXPsSXhdAiHBWJ/tJ8HAc9aH84BK+5JFZLNkJKx3G9kzQg==}
+  brace-expansion@5.0.9:
+    resolution: {integrity: sha512-ScQ4IuvIEF1TMlP7Zt+vjJ//9zlPb2SDcxWxM3bk8s6t6GGdJ7KO1dCcTidOPJKePW30LE/2cT7wCyPho9/Wxg==}
     engines: {node: 20 || >=22}
 
   camelcase-css@2.0.1:
@@ -942,8 +942,8 @@ packages:
     resolution: {integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==}
     engines: {node: '>=8'}
 
-  js-yaml@4.3.0:
-    resolution: {integrity: sha512-1td788aAnnZ5qs7V2QIRl1owjtYpbKt749Y3xauqQgwIIGF/xXWz1wMTEBx5O3LK3lXLVuqXPdPxj2BoFHaW9Q==}
+  js-yaml@4.3.1:
+    resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
 
   lightningcss-android-arm64@1.33.0:
@@ -1030,13 +1030,13 @@ packages:
     peerDependencies:
       marked: '>=1 <16'
 
-  marked@18.0.7:
-    resolution: {integrity: sha512-iDVQ5ldaiKXn6b2JroX5kgRfmwgqolW7NpaEzTl1k/2Zh1njIEN9yniyLV/mOvWwtsE8OGgkjsCYvijuPk1dtA==}
+  marked@18.0.9:
+    resolution: {integrity: sha512-/Sa4qiiHZxf0/FQdBBowr9q4r10krCwMvpK48FUBdXdUXScDxiQGR9zCPrFgRVR5LU3iySOiIjy09ZQvADir1w==}
     engines: {node: '>= 20'}
     hasBin: true
 
-  minimatch@10.2.5:
-    resolution: {integrity: sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg==}
+  minimatch@10.2.6:
+    resolution: {integrity: sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A==}
     engines: {node: 18 || 20 || >=22}
 
   minipass@7.1.3:
@@ -1370,8 +1370,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  vite-plugin-i18next-loader@4.0.1:
-    resolution: {integrity: sha512-yqRZlREoOb831IKnODxW8hVbPPrRTQB3115byvLLqtDvRB05edJjIKf60v3lDWZ7tAe41cNTqz1gj8F6V+NeQg==}
+  vite-plugin-i18next-loader@4.1.0:
+    resolution: {integrity: sha512-yXcZtb/lxY0VuKjGkNXyTFBMY4cgxYI4vjyCqb2vywC6N1GPgWEGyZNHAsk5dUEdtK8i4YJWkL3jdVOHmssB/w==}
     engines: {node: '>=24'}
     peerDependencies:
       vite: '>=3.1.6'
@@ -1854,7 +1854,7 @@ snapshots:
 
   ansi-regex@5.0.1: {}
 
-  ansi-regex@6.2.2: {}
+  ansi-regex@6.3.0: {}
 
   ansi-styles@4.3.0:
     dependencies:
@@ -1866,7 +1866,7 @@ snapshots:
 
   balanced-match@4.0.4: {}
 
-  brace-expansion@5.0.8:
+  brace-expansion@5.0.9:
     dependencies:
       balanced-match: 4.0.4
 
@@ -1975,7 +1975,7 @@ snapshots:
 
   glob@13.0.6:
     dependencies:
-      minimatch: 10.2.5
+      minimatch: 10.2.6
       minipass: 7.1.3
       path-scurry: 2.0.2
 
@@ -1985,7 +1985,7 @@ snapshots:
 
   is-fullwidth-code-point@3.0.0: {}
 
-  js-yaml@4.3.0:
+  js-yaml@4.3.1:
     dependencies:
       argparse: 2.0.1
 
@@ -2040,22 +2040,22 @@ snapshots:
 
   lru-cache@11.5.2: {}
 
-  marked-terminal@7.3.0(marked@18.0.7):
+  marked-terminal@7.3.0(marked@18.0.9):
     dependencies:
       ansi-escapes: 7.3.0
-      ansi-regex: 6.2.2
+      ansi-regex: 6.3.0
       chalk: 5.6.2
       cli-highlight: 2.1.11
       cli-table3: 0.6.5
-      marked: 18.0.7
+      marked: 18.0.9
       node-emoji: 2.2.0
       supports-hyperlinks: 3.2.0
 
-  marked@18.0.7: {}
+  marked@18.0.9: {}
 
-  minimatch@10.2.5:
+  minimatch@10.2.6:
     dependencies:
-      brace-expansion: 5.0.8
+      brace-expansion: 5.0.9
 
   minipass@7.1.3: {}
 
@@ -2390,13 +2390,13 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-i18next-loader@4.0.1(vite@8.1.3(@types/node@26.1.1)(esbuild@0.27.2)(sugarss@5.0.1(postcss@8.5.23))):
+  vite-plugin-i18next-loader@4.1.0(vite@8.1.3(@types/node@26.1.1)(esbuild@0.27.2)(sugarss@5.0.1(postcss@8.5.23))):
     dependencies:
       dot-prop: 10.2.0
       glob: 13.0.6
-      js-yaml: 4.3.0
-      marked: 18.0.7
-      marked-terminal: 7.3.0(marked@18.0.7)
+      js-yaml: 4.3.1
+      marked: 18.0.9
+      marked-terminal: 7.3.0(marked@18.0.9)
       ts-deepmerge: 8.0.0
       vite: 8.1.3(@types/node@26.1.1)(esbuild@0.27.2)(sugarss@5.0.1(postcss@8.5.23))
 
